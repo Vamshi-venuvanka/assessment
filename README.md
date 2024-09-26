@@ -1,11 +1,18 @@
 **1.MSSQL SET UP:**
 
 1: **Microsoft SQL Server** installed on the machine.
+
+
 2:**SQL Server Management Studio** (SSMS) for running queries.
+
+
 
 **2.Database Setup**
 3:Create a new database for the tweets data.
+
+
 4:Use the SQL Server import wizard or a script to load the data from your TSV file into this table.
+
 
 **3.Queries**
 
