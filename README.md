@@ -1,4 +1,4 @@
-**1.MSSQL SET UP:**
+ **1.MSSQL SET UP:**
 
 1: **Microsoft SQL Server** installed on the machine.
 
@@ -19,7 +19,7 @@
 **3.Queries**
 
 
-1.How many tweets were posted containing the term on each day?
+**1**.How many tweets were posted containing the term on each day?
 
 
 **-- Select the name of the day (e.g., 'Monday', 'Tuesday') and the count of tweets containing 'music'**
@@ -50,7 +50,7 @@
 
 
 
-2:How many unique users posted a tweet containing the term?
+**2**:How many unique users posted a tweet containing the term?
 
 
 **-- Selects distinct user IDs and counts the total number of unique users who posted tweets containing the term 'music'**
@@ -95,7 +95,7 @@ The **COUNT(DISTINCT id)** directly returns the count without listing the distin
 
 
 
-3: How many likes did tweets containing the term get, on average?
+**3**: How many likes did tweets containing the term get, on average?
 
 
 **-- Calculates the average number of likes for tweets containing the term 'music'**
@@ -122,7 +122,7 @@ The query returns the average number of likes (avg_likes) for tweets matching th
 
 
 
-4:Where (in terms of place IDs) did the tweets come from?
+**4**:Where (in terms of place IDs) did the tweets come from?
 
 
 
@@ -148,7 +148,7 @@ This query retrieves distinct place IDs for tweets containing the term "music" a
 
 
 
-5:What times of day were the tweets posted at? 
+**5**:What times of day were the tweets posted at? 
 
 
 
@@ -180,7 +180,7 @@ This query retrieves distinct place IDs for tweets containing the term "music" a
 
 
 
-6:Which user posted the most tweets containing the term?
+**6**:Which user posted the most tweets containing the term?
 
 
 **-- Retrieves the user who posted the most tweets containing the term 'music'
@@ -215,6 +215,50 @@ Output: The **freqnetwork** user has posted more tweets containing the term
 
 
 
+
+**4.Steps to Run a Query in SSMS**
+
+**.** Open SQL Server Management Studio (SSMS)
+
+**.** Launch the SSMS application on your computer.
+
+**.** Connect to Your Database Server
+
+**.** In the "Connect to Server" dialog, enter your server name and authentication details.
+
+**.** Click "Connect" to establish a connection to the database server.
+
+**.** Select the Database
+
+**.** In the Object Explorer pane, expand the server node.
+
+**.** Expand the "Databases" node and select the database where you want to run the query.
+
+**.** Open a New Query Window
+
+**.** Click the "New Query" button on the toolbar or press Ctrl + N to open a new query editor window.
+
+**.** Enter Your SQL Query
+
+**.** In the new query window, type or paste your SQL query.
+
+**.** Execute the Query
+
+**.** Click the "Execute" button on the toolbar or press F5 to run the query.
+
+**.** View the Results
+
+**.** Results will appear in the "Results" pane at the bottom of the query window.
+
+**.** Review and analyze the output as needed.
+
+**.** Save or Export Results (Optional)
+
+**.** If you need to save or export the results, you can right-click on the results grid and choose options like "Save Results As" or copy the results to another application.
+
+**.** Close the Query Window
+
+**.** Once you have finished, you can close the query window by clicking the "X" button or selecting "File" > "Close" from the menu.
 
 
 
