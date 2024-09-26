@@ -22,11 +22,17 @@
 
 **-- Select the name of the day (e.g., 'Monday', 'Tuesday') and the count of tweets containing 'music'
 SELECT DATENAME(WEEKDAY, created_at) AS day_name,  -- Extracts the name of the weekday from the 'created_at' timestamp
+
        COUNT(*) AS tweets_posted                   -- Counts the total number of tweets containing 'music'
+       
 FROM silversync                                    -- The table containing the tweets data
+
 WHERE text LIKE '%music%'                          -- Filters the tweets where the 'text' column contains the word 'music'
+
 GROUP BY DATENAME(WEEKDAY, created_at)             -- Groups the results by the day of the week to aggregate the tweet counts
+
 ORDER BY tweets_posted DESC                        -- Orders the results in descending order based on the number of tweets posted per day
+
 ;**
 
 
