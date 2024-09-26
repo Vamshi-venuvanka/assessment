@@ -8,6 +8,8 @@
 
 
 **2.Database Setup**
+
+
 3:Create a new database for the tweets data.
 
 
@@ -32,9 +34,7 @@
 
 **GROUP BY DATENAME(WEEKDAY, created_at)**             -- Groups the results by the day of the week to aggregate the tweet counts
 
-**ORDER BY tweets_posted DESC**                        -- Orders the results in descending order based on the number of tweets posted per day
-
-;**
+**ORDER BY tweets_posted DESC;**                        -- Orders the results in descending order based on the number of tweets posted per day
 
 
 **Explanation**:
@@ -47,6 +47,7 @@
 **GROUP BY DATENAME(WEEKDAY, created_at)**: Groups the result by the day of the week to ensure that tweet counts are aggregated based on each weekday.
 
 **ORDER BY tweets_posted DESC**: Sorts the results in descending order, so the day with the highest number of tweets appears at the top.
+
 
 
 2:How many unique users posted a tweet containing the term?
@@ -93,6 +94,7 @@ This query is simpler and focuses only on counting the number of unique users wh
 The **COUNT(DISTINCT id)** directly returns the count without listing the distinct users themselves.
 
 
+
 3: How many likes did tweets containing the term get, on average?
 
 
@@ -123,6 +125,7 @@ The query returns the average number of likes (avg_likes) for tweets matching th
 4:Where (in terms of place IDs) did the tweets come from?
 
 
+
 **-- Retrieves the place ID where the tweets containing 'music' were posted, and replaces null values with 'unknown'**
 
 **SELECT COALESCE(place_id, 'unknown') AS place_id**  -- Uses COALESCE to replace NULL values in the 'place_id' column with 'unknown'
@@ -146,6 +149,7 @@ This query retrieves distinct place IDs for tweets containing the term "music" a
 
 
 5:What times of day were the tweets posted at? 
+
 
 
 **-- Retrieves the number of tweets containing the term 'music' for each hour of the day**
@@ -173,6 +177,7 @@ This query retrieves distinct place IDs for tweets containing the term "music" a
 **GROUP BY DATEPART(HOUR, created_at)**: Groups the tweets based on the hour they were posted.
 
 **ORDER BY total_tweets DESC**: Sorts the results by the total number of tweets in descending order, showing the hours with the most activity first.
+
 
 
 6:Which user posted the most tweets containing the term?
